@@ -1,0 +1,51 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#root{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: lightblue;
+}
+
+.bordo{
+  border-radius: 20px;
+  height: 70vh;
+}
+
+i:hover{
+  cursor: pointer;
+}
+
+#root > i{
+  font-size: 100px;
+  position: absolute;
+}
+
+.dot{
+  font-size: 100px;
+  padding-top: 50px;
+  color: white;
+}
+
+.fa-arrow-circle-right{
+  right: 100px;
+}
+
+.fa-arrow-circle-left{
+  left: 100px;
+}
+
+.fa-dot-circle{
+  bottom: 10px;
+}
+
+.blue{
+  color: blue;
+}
