@@ -12,12 +12,12 @@
 <body>
 
   <div id="root">
-    <i class="fas fa-arrow-circle-left" @click="prev"></i>
+    <i class="fas fa-arrow-circle-left" v-on:37="prev" @click="prev"></i>
     <img :class="mieClassi" :src="immagini[counter]">
     <div class="dot">
       <i class="fas fa-dot-circle" v-for="(item, index) in immagini" :class="(index == counter) ? 'blue' : '' " @click="questaFoto(index)"></i>
     </div>
-    <i class="fas fa-arrow-circle-right" @click="next"></i>
+    <i class="fas fa-arrow-circle-right" v-on:39="next" @click="next"></i>
   </div>
 
   <script src="js\script.js"></script>

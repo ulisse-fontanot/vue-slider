@@ -2,6 +2,7 @@ var root = new Vue({
   el: '#root',
   data: {
     counter: 0,
+    intervallo: "",
     immagini: [
       "img/bonolis.webp",
       "img/ezio.jpg",
@@ -9,6 +10,9 @@ var root = new Vue({
       "img/maccio.jpg"
     ],
     mieClassi: "bordo"
+  },
+  created(){
+    this.intervallo = setInterval(this.next, 2000);
   },
   methods: {
     next(){
@@ -18,7 +22,8 @@ var root = new Vue({
       (this.counter <= 0) ? this.counter = 3 : this.counter--;
     },
     questaFoto(indice){
-      this.counter == indice;
+      this.counter = indice;
+      clearInterval(this.intervallo);
     }
   }
 })
